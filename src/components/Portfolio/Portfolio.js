@@ -1,8 +1,9 @@
 import React from 'react'
-import { Card, SimpleGrid, Tabs } from '@chakra-ui/react';
+import { SimpleGrid } from '@chakra-ui/react';
 import Project from './Project'
 import NPSapiProject from './assets/NPSapiProject.PNG'
 import BrainSync from './assets/BrainSync-small.png'
+import WeatherApp from './assets/WeatherApp.png'
 
 const projectData = [
 	{
@@ -14,7 +15,7 @@ const projectData = [
 	},
 	{
 		title: 'What is the Weather',
-		image: '',
+		image: WeatherApp,
 		deployedUrl: 'https://bootcamp-mo.github.io/What-is-the-Weather/',
 		repoUrl: 'https://github.com/bootcamp-Mo/What-is-the-Weather',
 		description: 'A site to check the weather outlook for multiple cities'
@@ -46,6 +47,13 @@ const projectData = [
 		deployedUrl: '',
 		repoUrl: 'https://github.com/BrianMorse1/group-project-chat',
 		description: 'A app that focuses on studying and collaboration that allows users to communicate with others in real time'
+	},
+	{
+		title: 'Regular Expressions: IPv4 address',
+		image: '',
+		deployedUrl: '',
+		repoUrl: 'https://github.com/bootcamp-Mo/didactic-engine/tree/main',
+		description: 'Explains a regex expression that checks for a valid IPv4 address'
 	},
 	// {
 	// 	title: '',

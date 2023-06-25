@@ -3,28 +3,39 @@ import './App.css';
 import React from 'react'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 
 import Header from './components/Header'
-import Footer from './components/Footer'
+import Footer from './components/Footer/Footer'
 // import About from './components/About'
 import Portfolio from './components/Portfolio/Portfolio'
-// import Contact from './components/Contact'
+import Navigation from './components/Navigation';
 // import Resume from './components/Resume'
 
+const theme = extendTheme({
+  styles: {
+    global: {
+      body: {
+        fontFamily: 'Averia Serif Libre',
+        color: 'red',
+        bg: 'lavender'
+      },
+    },
+  },
+});
 
 
 function App() {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <Router>
         <div >
           <Header />
+          <Navigation />
           <Routes>
             {/* <Route path="/about" element={About} /> */}
             <Route path="/portfolio" element={<Portfolio />} />
-            {/* <Route path="/contact" element={Contact} />
-            <Route path="/resume" element={Resume} />
+            {/* <Route path="/resume" element={Resume} />
             <Route path="/" element={<About />} /> */}
           </Routes>
           <Footer />

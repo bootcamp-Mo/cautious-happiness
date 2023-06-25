@@ -11,6 +11,7 @@ const Project = ({ title, image, deployedUrl, repoUrl, description }) => {
 			overflow='hidden'
 			variant='filled'>
 			<Image
+				boxSize='100px'
 				objectFit='cover'
 				maxW={{ base: '100%', sm: '200px' }}
 				src={image}
@@ -21,18 +22,15 @@ const Project = ({ title, image, deployedUrl, repoUrl, description }) => {
 				<CardBody>
 					<Heading size='md'>{title}</Heading>
 					<Text>{description}</Text>
-					<Link></Link>
 					<Link href={repoUrl} isExternal>
 						Repo <ExternalLinkIcon mx='2px' />
 					</Link>
-					{/* {deployedUrl
-						? <a href={deployedUrl}>Project</a>
-						: <span>Project</span>
-					} */}
-					<Link href={deployedUrl} isExternal>
-						deployed <ExternalLinkIcon mx='2px' />
-					</Link>
-
+					{deployedUrl
+						? <Link href={deployedUrl} isExternal>
+							Deployed <ExternalLinkIcon mx='2px' />
+						</Link>
+						: <span> </span>
+					}
 				</CardBody>
 			</Stack>
 		</Card>
