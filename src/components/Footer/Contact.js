@@ -1,7 +1,8 @@
 import React from 'react'
 import {
 	Button, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton,
-	DrawerBody, DrawerHeader, DrawerFooter, Input, useDisclosure
+	DrawerBody, DrawerHeader, DrawerFooter, Input, useDisclosure,
+	FormControl, FormLabel, FormHelperText, Textarea
 } from '@chakra-ui/react';
 
 
@@ -17,24 +18,31 @@ export const Contact = () => {
 					<DrawerHeader>Contact Me </DrawerHeader>
 
 					<DrawerBody>
-						<form
-							id='my-form'
-							onSubmit={(e) => {
-								e.preventDefault()
-								console.log('submitted')
-							}}
-						>
-							<Input name='nickname' placeholder='Type here...' />
-							<Button type='submit' form='my-form'>
-								Save
-							</Button>
-						</form>
+						<FormControl>
+							<FormHelperText>Hello</FormHelperText>
+							<FormControl mt="4" mb="6">
+								<FormLabel>Your Name</FormLabel>
+								<Input type='name' />
+							</FormControl>
+							<FormLabel>Email address</FormLabel>
+							<Input
+								type='email'
+							/>
+						</FormControl>
+
+						<FormControl mt="4" >
+							<FormLabel>Message</FormLabel>
+							<Input
+								type='message'
+								placeholder='What do you want me to know?'
+							/>
+						</FormControl>
+						<Button colorScheme='red' size='sm' variant='ghost'>
+							Send
+						</Button>
 					</DrawerBody>
 
 					<DrawerFooter>
-						<Button type='submit' form='my-form'>
-							Save
-						</Button>
 					</DrawerFooter>
 				</DrawerContent>
 			</Drawer>

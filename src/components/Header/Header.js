@@ -1,28 +1,17 @@
 import React from 'react'
-// import Navigation from '../Navigation'
+import Navigation from '../Navigation'
 import { Box, Heading, Text, Center, VStack } from '@chakra-ui/react'
 
-import SimpleCloud from './assets/simple-clouds.png'
 
 const Header = () => {
 	return (
-		<VStack
-			bgImg={SimpleCloud}
-			minH={200}
-			bgSize='cover'
-			bgPos='bottom'
-		>
-			<Box>
-				<Center>
-					<Heading color='#e8b959'>Monique</Heading>
-				</Center>
-			</Box>
-			<Box >
-				<Center>
-					<Text>Inspiring Full Stack Web Developer | Software Engineer</Text>
-				</Center>
-			</Box>
-		</VStack>
+		<Box as="header" bg={'#4c9c82'} width="100%" boxShadow='2xl' >
+			<VStack spacing={2} justify="center" padding={2}>
+				<Heading >Mo Sherred</Heading>
+				<Text color='#dabb6a'>Aspiring Full Stack Web Developer</Text>
+				<Navigation />
+			</VStack>
+		</Box>
 	)
 }
 

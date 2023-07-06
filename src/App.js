@@ -3,25 +3,28 @@ import './App.css';
 import React from 'react'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { ChakraProvider, extendTheme, VStack } from '@chakra-ui/react';
+import { ChakraProvider, extendTheme, Container, VStack, HStack, Link, Box } from '@chakra-ui/react';
 
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-// import About from './components/About'
+
+import About from './components/About/About'
 import Portfolio from './components/Portfolio/Portfolio'
-import Navigation from './components/Navigation';
-// import Resume from './components/Resume'
+import Resume from './components/Resume'
+import BgWorm from './assets/wormhole.png'
+
+
 
 const theme = extendTheme({
   styles: {
     global: {
       body: {
         fontFamily: 'Averia Serif Libre',
-        color: '#9eab78',
-        bg: '#f8f4ec'
-      },
+        color: '#dc9d7e',
+        bg: '#efe0bf'
+      }
     },
-  },
+  }
 });
 
 
@@ -29,20 +32,32 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Router>
-        <div>
-          <Header />
-          <VStack >
-            <Navigation />
+        <Box
+          bgImage={BgWorm}
+          bgPosition="center"
+          bgRepeat="no-repeat"
+          bgSize="cover">
+          <VStack
+            minH="100vh"
+            spacing={4}>
+            <Header />
+            <Container
+              boxShadow='2xl'
+              p='6'
+              rounded='3xl'
+              bg='tomato'
+              maxW='container.md'
+            >
+              <Routes >
+                <Route path="/about" element={<About />} />
+                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="/resume" element={<Resume />} />
+                <Route path="/" element={<About />} />
+              </Routes>
+            </Container>
+            <Footer />
           </VStack>
-
-          <Routes >
-            {/* <Route path="/about" element={About} /> */}
-            <Route path="/portfolio" element={<Portfolio />} />
-            {/* <Route path="/resume" element={Resume} />
-            <Route path="/" element={<About />} /> */}
-          </Routes>
-          <Footer />
-        </div>
+        </Box>
       </Router>
     </ChakraProvider >
   );
@@ -51,14 +66,3 @@ function App() {
 export default App;
 
 
-
-/**==============================================
- * ?                  Info
- *   
- *   
- **   exact
- *      is used to make the routes strictly match the location's pathname. 
- * This ensures that the route will only be rendered if the path is an exact 
- *  match.
- *
- *=============================================**/
