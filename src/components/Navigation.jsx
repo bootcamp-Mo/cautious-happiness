@@ -8,7 +8,7 @@ import {
 } from '@chakra-ui/react'
 const Navigation = () => {
 	return (
-		<Breadcrumb separator='-' color='#973e20'>
+		<Breadcrumb separator='-' color='#973e20' fontSize='xl'>
 			<Breadcrumb>
 				<BreadcrumbItem>
 					<BreadcrumbLink>

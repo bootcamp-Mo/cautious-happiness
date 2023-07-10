@@ -1,9 +1,9 @@
-import './App.css';
+
 
 import React from 'react'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { ChakraProvider, extendTheme, Container, VStack, HStack, Link, Box } from '@chakra-ui/react';
+import { ChakraProvider, Container, VStack, HStack, Link, Box } from '@chakra-ui/react';
 
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
@@ -13,19 +13,8 @@ import Portfolio from './components/Portfolio/Portfolio'
 import Resume from './components/Resume'
 import BgWorm from './assets/wormhole.png'
 
+import theme from './theme';
 
-
-const theme = extendTheme({
-  styles: {
-    global: {
-      body: {
-        fontFamily: 'Averia Serif Libre',
-        color: '#dc9d7e',
-        bg: '#efe0bf'
-      }
-    },
-  }
-});
 
 
 function App() {
@@ -36,7 +25,8 @@ function App() {
           bgImage={BgWorm}
           bgPosition="center"
           bgRepeat="no-repeat"
-          bgSize="cover">
+          bgSize="cover"
+          >
           <VStack
             minH="100vh"
             spacing={4}>

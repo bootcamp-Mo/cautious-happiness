@@ -8,20 +8,22 @@ const About = () => {
       <HStack>
         <Container align={'end'}>
           <VStack >
-            <Box boxSize='150px'><Image
+            <Box boxSize='150px'>
+              <Image
               borderRadius={'3xl'}
               src={Mo}
               alt='Mo the Developer'
-            /></Box>
+            />
+            </Box>
 
-            <Heading as="h1" size={'3xl'} color={'gray.70'} mb={4}>
+            <Heading as="h1" size={'3xl'}  >
               About Me
             </Heading>
           </VStack>
         </Container>
-        <Container bg={'pink.400'}>
-          <Text fontSize={"2rem"} fontWeight={"bold"} p={5}>
-
+        <Container >
+          <Text fontSize={'lg'} fontWeight={"bold"} p={5}>
+Hello I am Learning but I'm pretty great, You totally want to be an mentor to me, bring under your wings and teach me how to write good code. 
           </Text>
         </Container>
       </HStack>
