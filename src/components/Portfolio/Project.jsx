@@ -30,7 +30,7 @@ const Project = ({ title, image, deployedUrl, repoUrl, description }) => {
 						/>
 					<CardBody>
 						<Heading size='md' noOfLines={1}>{title}</Heading>
-						<Collapse startingHeight={20} in={show}>
+						<Collapse startingHeight={100} in={show}>
 							<Text>{description}</Text>
 						</Collapse>
 						<HStack spacing={4} >
@@ -45,7 +45,7 @@ const Project = ({ title, image, deployedUrl, repoUrl, description }) => {
 									Deployed <ExternalLinkIcon mx='2px' />
 								</Button>
 								: <span> </span>
-							}
+		 					}
 						</HStack>
 					</CardBody>
 				</Flex>

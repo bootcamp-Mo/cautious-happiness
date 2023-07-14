@@ -19,7 +19,7 @@ export const Contact = () => {
 
 					<DrawerBody>
 						<FormControl>
-							<FormHelperText>Hello</FormHelperText>
+							<FormHelperText>Hello, this is  still a work in progress, there is no server yet</FormHelperText>
 							<FormControl mt="4" mb="6">
 								<FormLabel>Your Name</FormLabel>
 								<Input type='name' />

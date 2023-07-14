@@ -4,7 +4,7 @@ import './fonts.css';
 const theme = extendTheme({
   fonts: {
     heading: 'Averia Serif Libre',
-    body: 'Belligan'
+    body: 'Dosis'
   },
 
 

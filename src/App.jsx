@@ -3,7 +3,7 @@
 import React from 'react'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { ChakraProvider, Container, VStack, HStack, Link, Box } from '@chakra-ui/react';
+import { ChakraProvider, Container, VStack, Box } from '@chakra-ui/react';
 
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'

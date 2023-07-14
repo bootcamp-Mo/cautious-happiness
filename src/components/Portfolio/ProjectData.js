@@ -6,6 +6,7 @@ import SVGGen from './assets/SVGGen.PNG'
 import Regex from './assets/Regex.PNG'
 import ReadMe from './assets/readme.PNG'
 import NoSQL from './assets/NoSQL.PNG'
+import BrainChat from './assets/homepageDemo.gif'
 
 import JSFun from './assets/JavaScriptFun.PNG'
 import WorkDayScheduler from './assets/WorkDayScheduler.png'
@@ -67,6 +68,13 @@ const projectData = [
 		deployedUrl: 'https://bootcamp-mo.github.io/JavaScript-fundamental-quiz/',
 		repoUrl: 'https://github.com/bootcamp-Mo/JavaScript-fundamental-quiz',
 		description: 'A timed quiz on JavaScript fundamentals'
+	},
+	{
+		title: 'BrainSync 2.0',
+		image: BrainChat,
+		deployedUrl: 'https://bestgroup-brainsync-52f09c273629.herokuapp.com/',
+		repoUrl: 'https://github.com/NoahJRalph/project-3-bestgroup',
+		description: 'BrainSync is your new \'neuron\' to the social media world. It\'s a fresh take on online connectivity that integrates the \'intellect\' of Apollo, GraphQL, React, and Chakra UI. Brainchild of our innovative team, it puts user experience at the core, promising seamless sharing and networking. We\'ve created a platform that is intuitive, responsive, and secure, making it a \'brainwave\' in modern social media. This is a \'no-brainer\' app – it\'s BrainSync, the \'cerebral cortex\' of social networking solutions makes connecting easy!'
 	},
 	// {
 	// 	title: 'Day Planner',

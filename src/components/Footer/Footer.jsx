@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <Box as="footer" mt="auto" bg="blue.500" width="100%">
       <Box>
-        <HStack spacing={4} justify="center" padding={4}>
+        <HStack spacing={4} justify="center" padding={2}>
           <Box fontSize='sm'>
           </Box>
           <Link href='developer-github-url' isExternal >

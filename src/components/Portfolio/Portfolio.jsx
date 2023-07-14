@@ -35,7 +35,7 @@ const Portfolio = () => {
       <Box >
         <Heading >Projects that I have worked on</Heading>
       </Box>
-      <Container mt={4} >
+      <Container mt={1} >
 			<Slider ref={sliderRef} {...settings} >
 					{projectData.map((project, index) => {
 							return <Project key={index} {...project} />
