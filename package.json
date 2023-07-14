@@ -1,8 +1,8 @@
 {
   "name": "cautious-happiness",
   "version": "0.1.0",
-  "homepage": "https://bootcamp-mo.github.io/cautious-happiness/",
-  "private": true,
+  "homepage": "https://bootcamp-mo.github.io/",
+  "private": "false",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.19",
     "@chakra-ui/react": "^2.7.1",
