@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Heading, List, ListItem, Text, Divider, SimpleGrid } from '@chakra-ui/react';
+import { Box, Heading, Text, SimpleGrid } from '@chakra-ui/react';
 
 const Resume = () => {
     return (

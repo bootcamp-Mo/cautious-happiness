@@ -1,5 +1,5 @@
 import React from 'react'
-import { HStack, Box, Link, Container, } from '@chakra-ui/react';
+import { HStack, Box, Link, } from '@chakra-ui/react';
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import Contact from './Contact'
 

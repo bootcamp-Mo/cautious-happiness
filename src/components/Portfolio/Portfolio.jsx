@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import { Heading, Text, Box, Container } from '@chakra-ui/react';
+import { Heading, Box, Container } from '@chakra-ui/react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";

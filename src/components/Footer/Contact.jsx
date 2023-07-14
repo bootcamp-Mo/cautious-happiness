@@ -2,7 +2,7 @@ import React from 'react'
 import {
 	Button, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton,
 	DrawerBody, DrawerHeader, DrawerFooter, Input, useDisclosure,
-	FormControl, FormLabel, FormHelperText, Textarea
+	FormControl, FormLabel, FormHelperText
 } from '@chakra-ui/react';
 
 

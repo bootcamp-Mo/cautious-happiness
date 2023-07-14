@@ -1,6 +1,6 @@
 import React from 'react'
 import Navigation from '../Navigation'
-import { Box, Heading, Text, Center, VStack } from '@chakra-ui/react'
+import { Box, Heading, Text, VStack } from '@chakra-ui/react'
 
 
 const Header = () => {
